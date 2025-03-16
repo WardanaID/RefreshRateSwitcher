@@ -12,3 +12,5 @@ Jalankan Powershell dalam hak akses administrator lalu eksekusi baris ini:
 
 kemudian, kamu dapat menjalankan skrip dengan powershell dengan cara mengklik kanan pada file .ps1 lalu pilih Run with PowerShell, atau dengan menjalankan baris ini di powershell:
 ### powershell -ExecutionPolicy Bypass -File RefreshRateSwitcher.ps1
+
+atau juga dapat membuka langsung file .bat
