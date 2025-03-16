@@ -1,8 +1,13 @@
-# ScreenResolutionChanger
+# Refresh Rate Switcher
 
-Automatic screen resolution changer using QRes by Anders Kjersem. I Developed this script basically because I required to change the resolution of my screens almost daily and it was a little bit annoying going to windows settings and stuff so I decided to create this scripts, and why not share them in git? 1love.
+Mengubah Refresh Rate dari 60hz ke 120hz atau sebaliknya berdasarkan kodisi daya perangkat (mode baterai atau mode isi daya) secara otomatis untuk perangkat yang tidak mendukung Refresh Rate Dinamis
 
-## DefResolution.bat
-Predefined resolution changer, change values in the file
-## InputResolution.bat
-Requires user to input the values of resolution
+## Cara menggunakan
+karena skrip ini menggunakan notifikasi banner dari windows untuk indikator status refresh rate, kamu perlu memasang modul burnttoast
+![image](https://github.com/user-attachments/assets/957ec95d-1862-488e-a994-4d69c8eec1ce)
+
+Jalankan Powershell dalam hak akses administrator lalu eksekusi baris ini:
+      Install-Module -Name BurntToast -Force -Scope CurrentUser
+
+kemudian, kamu dapat menjalankan skrip dengan powershell dengan cara mengklik kanan pada file .ps1 lalu pilih Run with PowerShell, atau dengan menjalankan baris ini di powershell:
+      powershell -ExecutionPolicy Bypass -File RefreshRateSwitcher.ps1
