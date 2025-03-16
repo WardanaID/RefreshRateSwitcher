@@ -1,14 +1,16 @@
-Import-Module BurntToast              # Pastikan modul terimport
+Import-Module BurntToast  # Pastikan modul terimport
 
 function Show-Notification {
     param (
         [string]$Title,
         [string]$Message
     )
-    New-BurntToastNotification -AppLogo C:\smile.jpg -Text $Title, $Message  #ubah -AppLogo jika ingin mengubah ikon di banner notifikasi
+    New-BurntToastNotification -AppLogo C:\smile.jpg -Text $Title, $Message
 }
-$QResPath = "QRes.exe"                # Sesuaikan dengan lokasi file QRes.exe
-$BatteryRefreshRate = 60              # Ubah berdasarkan nilai refresh rate yang tersedia pada monitor yang kamu gunakan
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$QResPath = "$ScriptDir\QRes.exe"
+
+$BatteryRefreshRate = 60
 $PluggedRefreshRate = 120
 
 function Set-RefreshRate {
@@ -45,5 +47,4 @@ while ($true) {
 
     Start-Sleep -Seconds 5
 }
-
 
