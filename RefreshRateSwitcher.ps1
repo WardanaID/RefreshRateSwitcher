@@ -5,9 +5,9 @@ function Show-Notification {
         [string]$Title,
         [string]$Message
     )
-    New-BurntToastNotification -AppLogo C:\smile.jpg -Text $Title, $Message
+    New-BurntToastNotification -AppLogo C:\smile.jpg -Text $Title, $Message  #ubah -AppLogo jika ingin mengubah ikon di banner notifikasi
 }
-$QResPath = "D:\QRes\QRes.exe"        # Sesuaikan dengan lokasi file QRes.exe
+$QResPath = "QRes.exe"                # Sesuaikan dengan lokasi file QRes.exe
 $BatteryRefreshRate = 60              # Ubah berdasarkan nilai refresh rate yang tersedia pada monitor yang kamu gunakan
 $PluggedRefreshRate = 120
 
