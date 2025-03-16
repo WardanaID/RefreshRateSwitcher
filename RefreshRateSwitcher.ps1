@@ -1,4 +1,4 @@
-Import-Module BurntToast  # Pastikan modul terimport
+Import-Module BurntToast              # Pastikan modul terimport
 
 function Show-Notification {
     param (
@@ -7,8 +7,8 @@ function Show-Notification {
     )
     New-BurntToastNotification -AppLogo C:\smile.jpg -Text $Title, $Message
 }
-$QResPath = "D:\QRes1\QRes.exe"  # Sesuaikan dengan lokasi file QRes.exe
-$BatteryRefreshRate = 60
+$QResPath = "D:\QRes\QRes.exe"        # Sesuaikan dengan lokasi file QRes.exe
+$BatteryRefreshRate = 60              # Ubah berdasarkan nilai refresh rate yang tersedia pada monitor yang kamu gunakan
 $PluggedRefreshRate = 120
 
 function Set-RefreshRate {
