@@ -5,13 +5,13 @@ function Show-Notification {
         [string]$Title,
         [string]$Message
     )
-    New-BurntToastNotification -AppLogo C:\smile.jpg -Text $Title, $Message
+    New-BurntToastNotification -AppLogo C:\smile.jpg -Text $Title, $Message   # Ubah jika ingin menggunakan Logo
 }
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $QResPath = "$ScriptDir\QRes.exe"
 
 $BatteryRefreshRate = 60
-$PluggedRefreshRate = 120
+$PluggedRefreshRate = 120   # Sesuaikan dengan spesifikasi layar
 
 function Set-RefreshRate {
     param ([int]$RefreshRate)
@@ -47,4 +47,5 @@ while ($true) {
 
     Start-Sleep -Seconds 5
 }
+
 
