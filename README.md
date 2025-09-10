@@ -28,11 +28,17 @@
      ```powershell
      powershell -ExecutionPolicy Bypass -File RefreshRateSwitcher.ps1
      ```
-   - **Atau**, langsung buka file `.bat` yang tersedia untuk menjalankan skrip secara otomatis.
+   - **Atau**, langsung buka file `.bat` yang tersedia untuk menjalankan skrip secara otomatis. Ubah terlebih dahulu direktori pada file `.bat`
 
 3. **Notifikasi**
    - Setiap kali refresh rate berubah, Anda akan mendapatkan notifikasi banner seperti gambar di bawah:
+     
      ![image](https://github.com/user-attachments/assets/957ec95d-1862-488e-a994-4d69c8eec1ce)
+     
+4. **Auto-start saat boot**  - Skrip dapat dijalankan secara otomatis saat menyalakan pc dengan cara
+   - Ubah Direktori didalam file `.vbs` sesuai dengan lokasi `RefreshRateSwitcher.ps1`
+   - Buat Pintasan file `.vbs` lalu tekan `Win + R` kemudian ketik **shell:startup**
+   - Pindahkan file pintasan tersebut ke dalam direktori startup
 
 ---
 
